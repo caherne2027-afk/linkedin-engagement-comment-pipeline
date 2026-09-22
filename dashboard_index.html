@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engagement Review Queue (showcase)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg:#0f1117; --surface:#1a1d27; --border:#2e3250;
+  --accent:#5b6af5; --green:#22c55e; --yellow:#eab308;
+  --text:#e2e8f0; --muted:#94a3b8;
+}
+body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; padding: 32px; }
+.header { margin-bottom: 24px; }
+.header h1 { font-size: 22px; margin-bottom: 4px; }
+.header p { color: var(--muted); font-size: 14px; }
+.header .note { margin-top: 8px; padding: 10px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; font-size: 13px; color: var(--muted); }
+.stats { display: flex; gap: 16px; margin-bottom: 24px; }
+.stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; }
+.stat-label { font-size: 12px; color: var(--muted); }
+.stat-value { font-size: 22px; font-weight: 600; }
+.stat-value.green { color: var(--green); }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+.lead-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+.lead-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+.lead-name { font-weight: 600; }
+.lead-title { font-size: 12px; color: var(--muted); }
+.lead-badges { margin-bottom: 8px; }
+.badge { font-size: 11px; padding: 3px 8px; border-radius: 999px; background: rgba(34,197,94,0.15); color: var(--green); }
+.badge.medium { background: rgba(234,179,8,0.15); color: var(--yellow); }
+.lead-source { font-size: 12px; color: var(--muted); margin-bottom: 10px; }
+.comment-text { font-size: 13px; color: var(--muted); border-left: 2px solid var(--border); padding-left: 10px; margin-bottom: 10px; }
+.reply-draft { font-size: 13px; margin-bottom: 12px; }
+.approve-btn { background: var(--accent); color: white; border: none; padding: 8px 14px; border-radius: 6px; font-size: 13px; cursor: pointer; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Engagement Review Queue</h1>
+    <p>Sanitized showcase build — every lead below is synthetic example data.</p>
+    <div class="note">In production this dashboard is regenerated on a scheduled GitHub Actions run and hosted per-client on Netlify with no shared credentials. Nothing here posts automatically — every reply is copy-pasted in manually after approval.</div>
+  </div>
+  <div class="stats">
+    <div class="stat-card"><div class="stat-label">Leads flagged</div><div class="stat-value">3</div></div>
+    <div class="stat-card"><div class="stat-label">Tier 1 (verified)</div><div class="stat-value green">2</div></div>
+    <div class="stat-card"><div class="stat-label">Awaiting review</div><div class="stat-value">3</div></div>
+  </div>
+  <div class="cards">
+    <!-- CARDS_START -->
+
+    <div class="lead-card">
+      <div class="lead-header">
+        <span class="lead-name">Priya Nataraj</span>
+        <span class="lead-title">Founder, Meridian Ops</span>
+      </div>
+      <div class="lead-badges"><span class="badge high">Tier 1 · 0.95</span></div>
+      <div class="lead-source">Layer 1 -- commented on a tracked influencer&#x27;s post</div>
+      <blockquote class="comment-text">&ldquo;This is exactly the gap we&#x27;ve been trying to close for months.&rdquo;</blockquote>
+      <div class="reply-draft"><strong>Drafted reply:</strong> That gap is more common than people admit publicly. What&#x27;s been the biggest blocker on your end -- tooling, or just bandwidth?</div>
+      <button class="approve-btn">Approve &amp; copy</button>
+    </div>
+
+    <div class="lead-card">
+      <div class="lead-header">
+        <span class="lead-name">Marcus Webb</span>
+        <span class="lead-title">Co-Founder &amp; CEO, Fielder Labs</span>
+      </div>
+      <div class="lead-badges"><span class="badge high">Tier 1 · 0.88</span></div>
+      <div class="lead-source">Layer 2 -- posted again after initial outreach sequence ended</div>
+      <blockquote class="comment-text">&ldquo;Three months in and still can&#x27;t get a straight answer on why our pipeline dried up.&rdquo;</blockquote>
+      <div class="reply-draft"><strong>Drafted reply:</strong> Pipeline drying up after a strong start usually traces to one or two channels quietly underperforming. Worth a quick audit before assuming it&#x27;s demand.</div>
+      <button class="approve-btn">Approve &amp; copy</button>
+    </div>
+
+    <div class="lead-card">
+      <div class="lead-header">
+        <span class="lead-name">Elena Torres</span>
+        <span class="lead-title">Owner, Northbridge Consulting</span>
+      </div>
+      <div class="lead-badges"><span class="badge medium">Tier 2 · 0.71</span></div>
+      <div class="lead-source">Layer 1 -- commented on a tracked influencer&#x27;s post</div>
+      <blockquote class="comment-text">&ldquo;Curious how others are handling this at a smaller scale.&rdquo;</blockquote>
+      <div class="reply-draft"><strong>Drafted reply:</strong> At smaller scale it usually comes down to picking one channel and going deep rather than spreading thin. What have you tried so far?</div>
+      <button class="approve-btn">Approve &amp; copy</button>
+    </div>
+    <!-- CARDS_END -->
+  </div>
+</body>
+</html>
