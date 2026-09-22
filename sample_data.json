@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Priya Nataraj",
+    "title": "Founder, Meridian Ops",
+    "tier": "Tier 1",
+    "match_score": 0.95,
+    "verified": true,
+    "source": "Layer 1 -- commented on a tracked influencer's post",
+    "comment_text": "This is exactly the gap we've been trying to close for months.",
+    "reply_draft": "That gap is more common than people admit publicly. What's been the biggest blocker on your end -- tooling, or just bandwidth?"
+  },
+  {
+    "name": "Marcus Webb",
+    "title": "Co-Founder & CEO, Fielder Labs",
+    "tier": "Tier 1",
+    "match_score": 0.88,
+    "verified": true,
+    "source": "Layer 2 -- posted again after initial outreach sequence ended",
+    "comment_text": "Three months in and still can't get a straight answer on why our pipeline dried up.",
+    "reply_draft": "Pipeline drying up after a strong start usually traces to one or two channels quietly underperforming. Worth a quick audit before assuming it's demand."
+  },
+  {
+    "name": "Elena Torres",
+    "title": "Owner, Northbridge Consulting",
+    "tier": "Tier 2",
+    "match_score": 0.71,
+    "verified": false,
+    "source": "Layer 1 -- commented on a tracked influencer's post",
+    "comment_text": "Curious how others are handling this at a smaller scale.",
+    "reply_draft": "At smaller scale it usually comes down to picking one channel and going deep rather than spreading thin. What have you tried so far?"
+  }
+]
